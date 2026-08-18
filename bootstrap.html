@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keefer</title>
-
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS (brand-specific styling Bootstrap doesn't cover) -->
     <link rel="stylesheet" href="bootstrap.css">
 </head>
-
 <body>
     <div class="page-wrapper">
-
         <!-- ===================== HEADER ===================== -->
         <header class="container-fluid p-0">
             <div class="row g-0 align-items-center">
@@ -29,7 +25,6 @@
                 </div>
             </div>
         </header>
-
         <!-- ===================== NAVIGATION ===================== -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-brand shadow-sm p-0">
             <div class="container-fluid">
@@ -48,206 +43,539 @@
                 </div>
             </div>
         </nav>
-
         <main>
             <div class="container-fluid main-content-container px-4 px-md-5">
-
                 <!-- ===================== HERO SECTION ===================== -->
-                <section class="row g-4 py-4">
-                    <div class="col-lg-7 col-12">
-                        <img src="images/gurantee_banner.gif" alt="main-img1" class="img-fluid w-100 shadow-sm">
+                <section class="container my-5">
+    <div class="row g-4">
+        <!-- Left Image -->
+        <div class="col-lg-7">
+            <img src="images/gurantee_banner.gif"
+                class="img-fluid w-100 h-100 shadow"
+                alt="Main Banner">
+        </div>
+        <!-- Right Form -->
+        <div class="col-lg-5">
+            <div class="hero-contact-panel shadow">
+                <!-- Heading -->
+                <div class="d-flex align-items-start gap-3 flex-wrap mb-3">
+                    <div class="contact-panel-label">
+                        <h2 class="text-white text-center py-2 px-3 m-0">
+                            QUESTIONS?
+                        </h2>
                     </div>
-
-                    <div class="col-lg-5 col-12">
-                        <div class="hero-contact-panel h-100 d-flex flex-column gap-2">
-                            <div class="d-flex flex-wrap align-items-start gap-3 pt-3 px-3">
-                                <h2 class="contact-panel-label text-white bg-brand p-2 mb-0">QUESTIONS?</h2>
-                                <h2 class="contact-panel-title mb-0">Have a
-                                    <span class="contact-panel-title-highlight d-block">Question</span>
-                                    About Your Case?
-                                </h2>
-                            </div>
-
-                            <div class="px-4">
-                                <p class="contact-panel-description mb-0">Enter your information and get your questions answered quickly and discreetly or call us at: <em class="fw-bold">540.433.6906</em></p>
-                            </div>
-
-                            <form class="row g-2 align-items-center px-4 pt-2 position-relative">
-                                <div class="col-12 col-sm-6">
-                                    <label for="name" class="form-label fw-bold small mb-1">NAME:</label>
-                                    <input type="text" id="name" name="name" class="form-control form-control-sm">
-
-                                    <label for="email" class="form-label fw-bold small mb-1 mt-2">EMAIL:</label>
-                                    <input type="email" id="email" name="email" class="form-control form-control-sm">
-
-                                    <label for="phone" class="form-label fw-bold small mb-1 mt-2">PHONE:</label>
-                                    <input type="tel" id="phone" name="phone" class="form-control form-control-sm">
-                                </div>
-
-                                <div class="col-12 col-sm-6 d-flex justify-content-center align-items-start">
-                                    <img src="images/cpng" alt="confidential-img" class="confidential-badge">
-                                </div>
-                            </form>
-
-                            <div class="px-4">
-                                <textarea rows="3" name="message" class="form-control message-textarea" placeholder="Tell us about your case here..."></textarea>
-                            </div>
-
-                            <div class="d-flex flex-wrap align-items-center gap-4 px-4 pb-0">
-                                <p class="privacy-guarantee-text fst-italic mb-0">100% Privacy Guranteed</p>
-                                <button class="btn submit-button">Ask Us About Your Case <img src="images/bullet_white.gif" alt=""></button>
-                            </div>
-                        </div>
+                    <div>
+                        <h2 class="mb-0">
+                            Have a
+                            <span class="contact-panel-title-highlight">
+                                Question
+                            </span>
+                            <br>
+                            About Your Case?
+                        </h2>
                     </div>
-                </section>
-
-                <!-- ===================== SERVICES OVERVIEW ===================== -->
-                <section class="row g-4 py-3">
-
-                    <!-- DUI Highlight -->
-                    <div class="col-lg-4 col-12 border-lg-end pe-lg-4">
-                        <h2 class="section-heading">CHARGED WITH <span>DUI?</span></h2>
-                        <h3 class="dui-subheading">FREE CASE EVALUATION</h3>
-
-                        <div class="d-flex align-items-start justify-content-between">
-                            <p id="para1" class="body-copy me-2">Being charged with a DUI
-                                can be scary. Get the help
-                                you deserve.<br><br>
-                                Click here to let us know
-                                how we can help you with
-                                your case.</p>
-                            <img src="images/paste_board.gif" alt="paste-bd-img" class="dui-image mb-3">
-                        </div>
-
-                        <div class="d-flex flex-column align-items-end mt-3">
-                            <hr class="cta-divider w-60">
-                            <button class="btn cta-button">CLICK HERE <img class="cta-icon" src="images/bullet_white.gif" alt=""></button>
-                        </div>
-                    </div>
-
-                    <!-- Resources -->
-                    <div class="col-lg-4 col-12 border-lg-end pe-lg-4 d-flex flex-column gap-4">
-                        <div class="row g-3 align-items-start">
-                            <div class="col-8">
-                                <h2 class="section-heading">LAW <span>BLOG</span></h2>
-                                <p class="body-copy">Learn more about Virginia Traffic Laws.</p>
-                                <div class="d-flex flex-column align-items-end mt-3">
-                                    <hr class="cta-divider w-90">
-                                    <button class="btn cta-button">CLICK HERE <img class="cta-icon" src="images/bullet_white.gif" alt=""></button>
+                </div>
+                <!-- Description -->
+                <p class="mb-4">
+                    Enter your information and get your questions answered quickly
+                    and discreetly or call us at:
+                    <strong><em>540.433.6906</em></strong>
+                </p>
+                <!-- Form -->
+                <form>
+                    <div class="row align-items-center">
+                        <!-- Inputs -->
+                        <div class="col-md-8">
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 col-form-label fw-bold">
+                                    NAME:
+                                </label>
+                                <div class="col-8">
+                                    <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <img src="images/pic1.gif" alt="" class="img-fluid">
-                            </div>
-                        </div>
-
-                        <hr class="resources-divider-rule">
-
-                        <div class="row g-3 align-items-start">
-                            <div class="col-8">
-                                <h2 class="section-heading">CASE <span>RESULTS</span></h2>
-                                <p class="body-copy">See How We Help Our Clients. Read Our Latest Case Results.</p>
-                                <div class="d-flex flex-column align-items-end mt-3">
-                                    <hr class="cta-divider w-90">
-                                    <button class="btn cta-button">CLICK HERE <img class="cta-icon" src="images/bullet_white.gif" alt=""></button>
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 col-form-label fw-bold">
+                                    EMAIL:
+                                </label>
+                                <div class="col-8">
+                                    <input type="email" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <img src="images/order_icon.gif" alt="" class="img-fluid">
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 col-form-label fw-bold">
+                                    PHONE:
+                                </label>
+                                <div class="col-8">
+                                    <input type="tel" class="form-control">
+                                </div>
                             </div>
+                        </div>
+                        <!-- Badge -->
+                        <div class="col-md-4 text-center">
+                            <img src="images/confidential.png"
+                                class="img-fluid confidential-badge"
+                                alt="Confidential">
                         </div>
                     </div>
-
-                    <!-- Credentials -->
-                    <div class="col-lg-4 col-12 text-center text-lg-start credentials-column mx-auto">
-                        <div class="d-flex justify-content-center align-items-start gap-3 mb-2">
-                            <img class="credentials-badge-image" width="130" src="images/avo_rating_large.gif" alt="">
-                            <img class="credentials-badge-image" width="120" src="images/national_college_large.gif" alt="">
-                        </div>
-                        <h1 class="section-heading fs-3">CERTIFICATES &<br> <span>CREDENTIALS</span></h1>
-                        <p class="body-copy mt-2">Keefer Law Firm has protected the rights of Virginians for over 30 years.</p>
-                        <div class="d-flex flex-column align-items-end mt-3">
-                            <hr class="cta-divider w-65">
-                            <button class="btn cta-button">LEARN MORE <img class="cta-icon" src="images/bullet_white.gif" alt=""></button>
-                        </div>
+                    <!-- Message -->
+                    <div class="mb-3">
+                        <textarea
+                            class="form-control"
+                            rows="3"
+                            placeholder="Tell us about your case here..."></textarea>
                     </div>
-                </section>
-
-                <hr class="section-divider-rule my-4">
-
-                <!-- ===================== PRACTICE OVERVIEW ===================== -->
-                <section class="row practice-overview-section g-5 py-3">
-
-                    <!-- Practice Areas -->
-                    <div class="col-lg-3 col-12">
-                        <h2 class="practice-heading">PRACTICE <span>AREAS</span></h2>
-
-                        <div class="d-flex flex-column gap-3 mt-3">
-                            <div class="practice-area-item d-flex align-items-center px-2">
-                                <img src="images/menu_bg.gif" alt="side-btn-img" class="practice-area-icon">
-                                <div class="flex-grow-1">
-                                    <h1 class="practice-area-title">DUI &amp; DWI</h1>
-                                    <div class="d-flex justify-content-end align-items-center gap-2">
-                                        <p class="practice-area-link mb-0">LEARN MORE</p>
-                                        <img style="height:16px;" src="images/bullet_red.gif" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="practice-area-item d-flex align-items-center px-2">
-                                <img src="images/menu_bg.gif" alt="side-btn-img" class="practice-area-icon">
-                                <div class="flex-grow-1">
-                                    <h1 class="practice-area-title">RECKLESS DRIVING</h1>
-                                    <div class="d-flex justify-content-end align-items-center gap-2">
-                                        <p class="practice-area-link mb-0">LEARN MORE</p>
-                                        <img style="height:14px;" src="images/bullet_red.gif" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="practice-area-item d-flex align-items-center px-2">
-                                <img src="images/menu_bg.gif" alt="side-btn-img" class="practice-area-icon">
-                                <div class="flex-grow-1">
-                                    <h1 class="practice-area-title">SPEED TICKETS</h1>
-                                    <div class="d-flex justify-content-end align-items-center gap-2">
-                                        <p class="practice-area-link mb-0">LEARN MORE</p>
-                                        <img style="height:14px;" src="images/bullet_red.gif" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="practice-area-item d-flex align-items-center px-2">
-                                <img src="images/menu_bg.gif" alt="side-btn-img" class="practice-area-icon">
-                                <div class="flex-grow-1">
-                                    <h1 class="practice-area-title">TRAFFIC VIOLATIONS</h1>
-                                    <div class="d-flex justify-content-end align-items-center gap-2">
-                                        <p class="practice-area-link mb-0">LEARN MORE</p>
-                                        <img style="height:14px;" src="images/bullet_red.gif" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="practice-menu-footer pt-4">
-                            <h1 class="practice-menu-footer-title">LEARN <span>MORE </span>ABOUT</h1>
-                            <div class="text-center">
-                                <h1 class="practice-menu-footer-word">MENU</h1>
-                                <h1 class="practice-menu-footer-word">AREA</h1>
-                                <h1 class="practice-menu-footer-word">HERE</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- About -->
-                    <div class="col-lg-6 col-12">
-                        <h1 id="sec3-title" class="about-heading pb-3">&lt;H1&gt;PAGE TITLE HERE</h1>
-                        <p id="sec3-para" class="about-copy">
-                            Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur.<br><br>
-                            Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum.
+                    <!-- Footer -->
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                        <p class="privacy-guarantee-text mb-0">
+                            100% Privacy Guaranteed
                         </p>
+                        <button class="btn submit-button">
+                            Ask Us About Your Case
+                            <img src="images/bullet_white.gif" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- ===================== SERVICES OVERVIEW ===================== -->
+<section class="feature-section py-4">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-12 col-md-6 col-lg-4 border-end-lg pe-lg-4 mb-4 mb-lg-0">
+                    <div class="feature-column">
+                        <div class="row align-items-center mb-3 g-2">
+                            <div class="col-7">
+                                <h3 class="fw-bold text-dark text-uppercase mb-1 fs-5">
+                                    CHARGED WITH
+                                    <span class="text-danger">DUI?</span>
+                                </h3>
+                                <h6 class="text-dark-red fw-bold text-uppercase mb-2 small">
+                                    FREE CASE EVALUATION
+                                </h6>
+                                <p class="small text-secondary mb-2">
+                                    Being charged with a DUI
+                                    <br>can be scary. Get the help
+                                    <br>you deserve.
+                                </p>
+                                <p class="small text-secondary mb-2">
+                                    Click here to let us know
+                                    <br>how we can help you with
+                                    <br>your case.
+                                </p>
+                                <div class="position-relative d-inline-block">
+                                    <div class="button-line"
+                                         style="width:180px;
+                                         position:absolute;
+                                         top:3px;
+                                         right:-30px;">
+                                    </div>
+                                    <a href="#"
+                                       class="action-small btn btn-danger rounded-0 btn-sm text-uppercase fw-bold px-3 py-1 shadow-sm mt-1">
+                                        CLICK HERE
+                                        <span class="ms-1"><img src="images/bullet_white_lrg.png" alt=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-5 text-end ps-2">
+                                <img src="images/paste_board.gif"
+                                     class="img-fluid feature-icon ms-auto"
+                                     alt="Clipboard"
+                                     style="min-width:70px; max-width:85px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================== PRACTICE OVERVIEW ===================== -->
+                <div class="col-12 col-md-6 col-lg-4 border-end-lg px-lg-4 mb-4 mb-lg-0">
+                    <div class="feature-column">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-7">
+                                <h4 class="fw-bold text-dark text-uppercase mb-1">
+                                    LAW <span class="text-danger">BLOG</span>
+                                </h4>
+                                <p class="small text-secondary mb-2">
+                                    Learn more about
+                                    <br>Virginia Traffic Laws.
+                                </p>
+                                <div class="position-relative d-inline-block">
+                                    <div class="button-line"
+                                         style="width:180px;
+                                         position:absolute;
+                                         top:3px;
+                                         right:-30px;">
+                                    </div>
+                                    <a href="#"
+                                       class="action-small btn btn-danger rounded-0 btn-sm text-uppercase fw-bold px-3 py-1 shadow-sm mt-1">
+                                        CLICK HERE
+                                        <span class="ms-1">▶</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-5 text-end">
+                                <img src="images/pic1.gif"
+                                     class="img-fluid feature-icon"
+                                     alt="Blog">
+                            </div>
+                        </div>
+                        <hr class="text-muted my-3">
+                        <div class="row align-items-center">
+                            <div class="col-7">
+                                <h4 class="fw-bold text-dark text-uppercase mb-1">
+                                    CASE <span class="text-danger">RESULTS</span>
+                                </h4>
+                                <p class="small text-secondary mb-2">
+                                    See how we help our clients.
+                                    <br>Read our latest case results.
+                                </p>
+                                <div class="position-relative d-inline-block">
+                                    <div class="button-line"
+                                         style="width:180px;
+                                         position:absolute;
+                                         top:3px;
+                                         right:-30px;">
+                                    </div>
+                                    <a href="#"
+                                       class="action-small btn btn-danger rounded-0 btn-sm text-uppercase fw-bold px-3 py-1 shadow-sm mt-1">
+                                        CLICK HERE
+                                        <span class="ms-1"><img src="images/bullet_white_lrg.png" alt=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-5 text-end">
+                                <img src="images/order_icon.gif"
+                                     class="img-fluid feature-icon"
+                                     alt="Case">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CERTIFICATES -->
+                <div class="col-12 col-md-12 col-lg-4 ps-lg-4">
+
+                    <div class="feature-column d-flex flex-column align-items-center text-center">
+
+                        <div class="row mb-3 g-2 justify-content-center w-100">
+
+                            <div class="col-auto text-end">
+                                <img src="images/avo_rating_large.gif"
+                                     class="img-fluid certificate-badge"
+                                     alt="Avvo Badge">
+                            </div>
+
+                            <div class="col-auto text-start">
+                                <img src="images/national_college_large.gif"
+                                     class="img-fluid certificate-badge"
+                                     alt="National College Badge">
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-2">
+
+                            <h4 class="fw-bold text-dark text-uppercase mb-1">
+                                CERTIFICATES &
+                                <br>
+                                <span class="text-danger">CREDENTIALS</span>
+                            </h4>
+
+                            <p class="small text-secondary mb-3">
+                                Keefer Law Firm has protected the
+                                <br>rights of Virginians for over 30 years.
+                            </p>
+
+                        </div>
+
+
+                        <div class="w-100 d-flex justify-content-center">
+
+                            <div class="position-relative d-inline-block">
+
+                                <div class="button-line-center"></div>
+
+                                <a href="#"
+                                   class="action-small btn btn-danger rounded-0 btn-sm text-uppercase fw-bold px-3 py-1 shadow-sm mt-1 position-relative">
+                                    LEARN MORE
+                                    <span class="ms-1">▶</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Credentials -->
+    <div class="text-center my-3">
+        <img src="images/hr_shadow.png"
+             alt="Divider"
+             class="img-fluid d-block mx-auto">
+    </div>
+
+
+    
+                <!-- ===================== PRACTICE OVERVIEW ===================== -->
+    <main class="content-area">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+
+                  <!-- Practice Areas -->
+                <aside class="col-12 col-md-4 col-lg-3 mb-4 practice-sidebar mt-3 d-flex flex-column align-items-center">
+
+                    <h3 class="text-center">
+                        PRACTICE
+                        <span>AREAS</span>
+                    </h3>
+
+
+                    <ul class="practice-menu w-100 mx-auto"
+                        style="max-width:280px;">
+
+                        <li>
+                            <a href="#">
+                                DUI &amp; DWI
+                                <span class="more-link">
+                                    LEARN MORE
+                                    <span class="arrow-red"><img src="images/bullet_red.gif" alt=""></span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                RECKLESS DRIVING
+                                <span class="more-link">
+                                    LEARN MORE
+                                    <span class="arrow-red"><img src="images/bullet_red.gif" alt=""></span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                SPEEDING TICKETS
+                                <span class="more-link">
+                                    LEARN MORE
+                                    <span class="arrow-red"><img src="images/bullet_red.gif" alt=""></span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                TRAFFIC VIOLATIONS
+                                <span class="more-link">
+                                    LEARN MORE
+                                    <span class="arrow-red"><img src="images/bullet_red.gif" alt=""></span>
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="w-100 text-center d-flex flex-column align-items-center mt-3">
+
+                        <h3 class="learn-heading text-center">
+                            LEARN <span>MORE</span> ABOUT
+                        </h3>
+
+                        <div class="menu-placeholder mx-auto"
+                             style="max-width:280px; width:100%;">
+
+                            <span>MENU</span>
+                            <span>AREA</span>
+                            <span>HERE</span>
+
+                        </div>
+
                     </div>
 
-                   
+                </aside>
+
+
+                <!-- About -->
+                <article class="col-12 col-md-8 col-lg-6 mb-4 mt-3 content-article">
+
+                    <h1>
+                        &lt;H1&gt;PAGE TITLE HERE
+                    </h1>
+
+                    <p>
+                        Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum.
+                    </p>
+
+                </article>
+
+
+                <!--  SIDEBAR -->
+                <aside class="col-12 col-md-12 col-lg-3 mb-4 action-sidebar mt-3">
+
+
+                    <div class="action-box">
+
+                        <h4>
+                            CLIENT
+                            <br>
+                            <span>TESTIMONIALS</span>
+                        </h4>
+
+                        <p>
+                            Read what others say
+                            <br>about Keefer Law Firm.
+                        </p>
+
+                    </div>
+
+
+                    <div class="position-relative d-inline-block action-button-wrap">
+
+                        <div class="position-absolute border-top border-secondary opacity-50"
+                             style="top:0; left:-30px; width:140%; z-index:1;">
+                        </div>
+
+                        <a href="#"
+                           class="action-small position-relative"
+                           style="z-index:2;">
+                            CLICK HERE
+                            <span><img src="images/bullet_white_lrg.png" alt=""></span>
+                        </a>
+
+                    </div>
+
+                    <hr class="my-3">
+
+
+                    <div class="action-box">
+
+                        <h4>
+                            DOWNLOAD
+                            <br>
+                            <span>FREE</span> REPORTS
+                        </h4>
+
+                        <p>
+                            Discover the truth about
+                            <br>Virginia Law.
+                        </p>
+
+                    </div>
+
+
+                    <div class="position-relative d-inline-block action-button-wrap">
+
+                        <div class="position-absolute border-top border-secondary opacity-50"
+                             style="top:0; left:-30px; width:140%; z-index:1;">
+                        </div>
+
+                        <a href="#"
+                           class="action-small position-relative"
+                           style="z-index:2;">
+                            CLICK HERE
+                            <span><img src="images/bullet_white_lrg.png" alt=""></span>
+                        </a>
+
+                    </div>
+
+                    <hr class="my-3">
+
+
+                    <div class="action-box">
+
+                        <h4>
+                            CONTACT
+                            <span>
+                                <br>OUR
+                            </span>
+                            OFFICES
+                        </h4>
+
+                        <p>
+                            Get your questions
+                            <br>answered right now.
+                        </p>
+
+                    </div>
+
+
+                    <div class="position-relative d-inline-block action-button-wrap">
+
+                        <div class="position-absolute border-top border-secondary opacity-50"
+                             style="top:0; left:-30px; width:140%; z-index:1;">
+                        </div>
+
+                        <a href="#"
+                           class="action-small position-relative"
+                           style="z-index:2;">
+                            CLICK HERE
+                            <span><img src="images/bullet_white_lrg.png" alt=""></span>
+                        </a>
+
+                    </div>
+
+                    <hr class="my-3">
+
+
+                    <div class="sidebar-badges d-flex flex-column align-items-center gap-2 mb-3">
+
+                        <img src="images/avo_rating_large.gif"
+                             alt="Avvo"
+                             class="img-fluid">
+
+                        <img src="images/national_college_large.gif"
+                             alt="National College"
+                             class="img-fluid">
+
+                    </div>
+
+
+                    <div class="social-section">
+
+                        <h4>
+                            FOLLOW <span>US</span>
+                        </h4>
+
+                        <hr class="social-divider my-2">
+
+                        <div class="social-list d-flex align-items-center gap-1">
+                            
+                                <img src="images/fb_icon.gif" alt="" class="social-icon">
+                                <img src="images/google_icon.gif" alt="" class="social-icon">
+                                <img src="images/twitter_icon.gif" alt="" class="social-icon">
+                                <img src="images/linked_icon.gif" alt="" class="social-icon">
+                            
+
+                            
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+
+           
+
+        <footer>
+            <div class="footer-bar-top"></div>
+            <div class="footer-bar-bottom"></div>
+        </footer>
     </div>
 
     <!-- Bootstrap 5 Bundle (includes Popper, needed for the navbar collapse) -->
